@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8"> 
+	</head>
+	<body>
+		<h4>Información sobre el producto</h4>
+			<div style="width:400px">
+			<form name="Formulario">
+				<fieldset>
+
+					<legend>Datos básicos</legend>
+					<div>
+						<label>Nombre</label><br>
+						<input type="text" style="width:300px">
+					</div>
+					<br>
+
+					<div>
+						<label>Descripción</label><br>
+						<textarea rows="7" style="width:300px"></textarea>
+					</div>	
+					<br>
+
+					<div>
+						<label>Foto</label>
+						<input type="file">
+					</div>
+					<br>
+
+					<div>
+						<input type="checkbox">
+						<label>Añadir contador de visitas</label>
+					</div>
+
+				</fieldset>
+				<fieldset>
+					<legend>Datos económicos</legend>
+
+					<div>
+						<table>
+							<tr>
+								<td align="left" width="150">
+									<label>Precio</label>
+									<input type="number" style="width:50px">
+									<label>€</label>
+								</td>
+								<td>
+									<label>Impuestos</label>
+									<input list="%" style="width:40px">
+									<datalist id="%">
+										<option value="4%">4%</option>
+										<option value="7%">7%</option>
+										<option value="16%">16%</option>
+										<option value="25%">25%</option>
+									</datalist>
+								</td>
+							</tr>	
+						</table>	
+					</div>
+					<br>
+					<div>
+						<label>Promoción</label><br>
+							<input type="radio" name="promo">
+							<label>Ninguno</label><br>
+							<input type="radio" name="promo">
+							<label>Transporte gratuito</label><br>
+							<input type="radio" name="promo">
+							<label>Descuento 5%</label><br>
+					</div>
+					
+
+				</fieldset>
+				
+
+			</form>
+
+			</div>
+	</body>
+</html>
